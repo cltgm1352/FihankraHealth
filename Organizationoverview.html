@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>団体概要｜Fihankra Health</title>
+  <link rel="icon" href="FihankraHealth-LOGO.png" type="image/png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f3f0ec; /* 背景色 */
+      color: #333;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ヘッダー */
+    header {
+      background-color: #5a7490; /* 薄紺 */
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    header a.logo-link {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    header a.logo-link img {
+      height: 50px;
+      vertical-align: middle;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #d9923f; /* 薄めオレンジ */
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #bb7a25;
+    }
+
+    /* メイン */
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 40px auto 60px;
+      padding: 40px 30px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-sizing: border-box;
+      text-align: left;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    }
+
+    main h1 {
+      text-align: center;
+      font-size: 38px;
+      color: #002b5c;
+      margin-bottom: 50px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    /* 所在地・従業員数と画像の横並びコンテナ */
+    .info-image-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* 左テキスト寄せ・右画像寄せ */
+      gap: 40px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .info-text {
+      font-size: 22px;
+      font-weight: 700;
+      color: #222;
+      line-height: 1.8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 250px;
+    }
+
+    .info-text span {
+      margin-bottom: 12px;
+      white-space: nowrap;
+    }
+
+    .info-image-container img {
+      max-width: 250px;
+      border-radius: 12px;
+      object-fit: cover;
+      height: auto;
+      margin-left: auto; /* 右揃え */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .right-section {
+      font-size: 20px;
+      line-height: 1.9;
+      color: #333;
+      font-weight: 500;
+      box-sizing: border-box;
+      margin-top: 20px;
+    }
+
+    .right-section strong {
+      font-weight: 800;
+      display: block;
+      font-size: 24px;
+      margin-bottom: 15px;
+      text-align: center;
+      color: #002b5c;
+      letter-spacing: 0.05em;
+    }
+
+    /* スマホ対応 */
+    @media (max-width: 768px) {
+      main {
+        padding: 30px 20px;
+      }
+
+      main h1 {
+        font-size: 28px;
+        margin-bottom: 40px;
+      }
+
+      .info-image-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .info-text {
+        text-align: center;
+        margin-bottom: 20px;
+        min-width: auto;
+      }
+
+      .info-text span {
+        white-space: normal;
+      }
+
+      .info-image-container img {
+        max-width: 80%;
+        margin-left: 0;
+      }
+
+      .right-section {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="FihankraHealth-LOGO.png" alt="Fihankra Health ロゴ" />
+    </a>
+    <nav>
+      <a href="index.html">活動内容</a>
+      <a href="Historyandtrackrecord.html">歴史と実績</a>
+      <a href="Organizationoverview.html">団体概要</a>
+    </nav>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main>
+    <h1>団体概要</h1>
+
+    <div class="info-image-container">
+      <div class="info-text">
+        <span>所在地: 東京都中央区</span>
+        <span>従業員数：4名</span>
+      </div>
+      <img src="活動内容3.jpg" alt="活動内容3" />
+    </div>
+
+    <div class="right-section">
+      <strong>事業概要</strong>
+      <p>
+        私達 Fihankra Healthは、アフリカのガーナの無医村に住む貧しい方々に対して、各無医村を直接訪ねて診察や処方を行うアウトリーチサービスを提供しています。2023年9月以来、42の無医村で、1000人を超える方の診察（約1600回の診療）を提供してきました。今後は今回のプロジェクトに記載しているように遠隔診療を取り入れていく予定です。
+      </p>
+    </div>
+  </main>
+
+</body>
+</html>
